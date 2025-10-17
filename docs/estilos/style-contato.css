@@ -1,0 +1,69 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; background: #08264b; color: #fff; }
+
+    /* ===== Header ===== */
+    .topo {
+      background: #e8f0fa;
+      color: #0a1a2b;
+      border-bottom: 1px solid #d7e2f2;
+      padding: 20px 30px;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .logo-topo img { height: 32px; }
+    .menu { list-style: none; display: flex; gap: 18px; }
+    .menu a { color: #0a1a2b; font-size: 14px; }
+    .botao-topo {
+      background: #f6ac00; color: #0a1a2b;
+      padding: 6px 10px; border-radius: 4px; font-weight: bold;
+    }
+
+    /* ===== Main ===== */
+    .secao-contato { text-align: center; padding: 50px 20px; }
+    .titulo-contato { font-size: 48px; margin-bottom: 10px; }
+    .linha { width: 140px; height: 5px; background: #f2bf68; border: none; margin: 0 auto 30px; }
+
+    .container-contato {
+      background: #fff; color: #000a4a;
+      max-width: 900px; margin: 0 auto; border-radius: 10px; padding: 30px;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 30px; position: relative;
+    }
+    .container-contato::before {
+      content: ""; position: absolute; top: 30px; bottom: 30px; left: 50%;
+      width: 3px; background: #f2bf68;
+    }
+
+    /* ===== Form ===== */
+    .formulario { text-align: left; }
+    .campo { margin-bottom: 15px; }
+    label {
+      display: block; margin-bottom: 5px;
+      font-size: 14px; color: #000a4a; text-align: left;
+    }
+    input, textarea {
+      width: 100%; padding: 10px; border: 1.5px solid #000a4a;
+      border-radius: 6px; background: #fff; color: #000a4a;
+    }
+    textarea { resize: vertical; min-height: 100px; }
+    input:focus, textarea:focus { border-color: #f2bf68; outline: none; }
+    .botao-enviar {
+      background: #000a4a; color: #fff; border: none;
+      border-radius: 20px; padding: 10px 20px; cursor: pointer;
+      margin-top: 10px;
+    }
+
+    /* ===== Informações ===== */
+    .informacoes {
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; color: #000a4a; gap: 10px;
+    }
+    .informacoes h2 { font-size: 20px; margin-bottom: 5px; }
+    .informacoes p { font-size: 16px; line-height: 1.6; }
+    .redes { display: flex; gap: 12px; margin-top: 10px; }
+    .redes img { width: 18px; height: 18px; }
+
+    @media (max-width: 800px) {
+      .container-contato { grid-template-columns: 1fr; }
+      .container-contato::before { display: none; }
+      .titulo-contato { font-size: 36px; }
+    }

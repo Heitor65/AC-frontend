@@ -1,0 +1,162 @@
+.cases-hero {
+    position: relative;
+    background-image: url('../imagens/IBMEC_BARRA.png');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cases-hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+
+.cases-hero h1 {
+    font-size: 5rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+
+.project-categories {
+    background-color: #002355;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.category-slider {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 25px;
+    margin: 0 20px;
+}
+
+.category-slider h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin: 0 0 20px 0;
+}
+
+.carousel-wrapper {
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding-bottom: 15px; 
+    justify-content: space-evenly;
+}
+
+.case-card {
+    scroll-snap-align: start;
+    flex: 0 0 300px;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px black;
+    display: flex;
+    flex-direction: column;
+}
+
+.case-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.case-content {
+    padding: 20px;
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.case-content h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.case-content p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+.case-link {
+    background-color: white;
+    color: grey;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    line-height: 35px;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+@media (max-width: 853px) {
+   
+    .case-layout {
+        flex-direction: column; 
+    }
+
+  
+    .case-detail-hero {
+        height: 30vh; 
+    }
+    .case-detail-hero h1 {
+        font-size: 2.5rem; 
+        text-align: center;
+        padding: 0 15px;
+    }
+
+   
+    .page-container {
+        padding: 20px;
+    }
+    .case-main-content {
+        padding: 30px;
+    }
+    .case-main-content h2 {
+        font-size: 1.6rem;
+    }
+
+    
+    .case-sidebar h3 {
+        text-align: center;
+    }
+    .other-projects-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 15px;
+    }
+
+    /* CTA */
+    .cta-card {
+        padding: 40px 25px;
+    }
+    .cta-card h2 {
+        font-size: 2rem;
+    }
+    .cta-card p {
+        font-size: 1.1rem;
+    }
+}

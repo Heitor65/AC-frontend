@@ -1,0 +1,152 @@
+.cases-hero {
+    position: relative;
+    background-image: url('../imagens/IBMEC_BARRA.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+    color: #ffffff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.cases-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 950px;
+    padding: 20px;
+}
+
+.cases-hero h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.cases-hero p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+body {
+    background-color: #002355;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.secao-contato {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.secao-contato h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.form-group, .radio-group {
+    margin-bottom: 25px;
+}
+
+.form-group label, .radio-group legend {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], select {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffffff;
+    font-size: 1rem;
+    color: grey;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: grey;
+}
+
+.radio-group legend {
+    margin-bottom: 15px;
+}
+
+.radio-options {
+    display: flex;
+    gap: 30px;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked::before {
+    content: '';
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-color: #000000;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 15px;
+    background-color: #E6AD2D; 
+    color: #002355;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+@media (max-width: 853px) {
+    
+    .cases-hero {
+        height: 40vh;
+    }
+    .cases-hero h1 {
+        font-size: 3rem;
+    }
+
+    
+    .category-slider {
+        margin: 0 10px; 
+        padding: 20px;
+    }
+
+    .category-slider h2 {
+        font-size: 1.5rem; 
+    }
+
+    .case-card {
+        flex: 0 0 250px; 
+    }
+}
